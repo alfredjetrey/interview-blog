@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <title>JSP-Servlet-xml-DOM-SAX</title>
+    </head>
+<body>
+    <ul>Tell me the life cycle of servlet and JSP?
+        <li><b>Servlet lifecycle :</b>The life cycle of a servlet is controlled by the container in which the servlet has been deployed. When a request is mapped to a servlet, the container performs the following steps.
+            <ul>1.) If an instance of the servlet does not exist, the web container
+                 <li>a. Loads the servlet class.</li>
+                 <li>b. Creates an instance of the servlet class.</li>
+                 <li>c. Initializes the servlet instance by calling the init method.
+                      <ul>1.) After the web container loads and instantiates the servlet class and before it delivers requests from clients, the web container initializes the servlet.</ul>
+                      <ul>2.) To customize this process to allow the servlet to read persistent configuration data, initialize resources, and perform any other one-time activities, you override the init method of the Servlet interface.</ul> 
+                      <ul>3.) A servlet that cannot complete its initialization process should throw UnavailableException.</ul>
+                 </li>
+            </ul>
+            <ul>2.) Invokes the service method, passing request and response objects.
+                <li>If the container needs to remove the servlet, it finalizes the servlet by calling the servlet's destroy method.
+                    <ul>Destroy method is called when a container wants to reclaim memory resources or when it is being shut down.</ul>
+                </li>
+            </ul> 
+        </li>
+        <li><b>JSP lifecycle :</b>There are four major phases of JSP life cycle are very similar to Servlet Life Cycle.
+             <ul>1.) Compilation - When a browser asks for a JSP, the JSP engine first checks to see whether it needs to compile the page.
+                  If the page has never been compiled, or if the JSP has been modified since it was last compiled, the JSP engine compiles the page.    
+                <li>Compilation process involves 3 steps : Parsing the JSP , Turning the JSP into a servlet , Compiling the servlet</li>   
+             </ul>
+             <ul>2.) Initialization - same as servlet jspInit()</ul>
+             <ul>3.) Execution - same as servlet jspService()</ul>
+             <ul>4.) Cleanup - same as servlet jspDestroy()</ul>
+        </li>
+          <a href="sample2.html">return to main</a>
+    </ul>
+    <ul>From JSP Tell me what happen if the client make a request explain to me the flow step-by-step?
+        <li>Intro
+            <ul> The web server needs a JSP engine ie. container to process JSP pages.</ul>
+            <ul> He JSP container is responsible for intercepting requests for JSP pages.</ul>
+            <ul> Apache Web server is normally used which has built-in JSP container to support JSP pages development.</ul>
+            <ul> A JSP container works with the Web server to provide the runtime environment and other services a JSP needs.</ul>
+        </li>
+        <li>Process
+            <ul>a.) As with a normal page, your browser sends an HTTP request to the web server.</ul>
+            <ul>b.) The web server recognizes that the HTTP request is for a JSP page and forwards it to a JSP engine. This is done by using the URL or JSP page which ends with .jsp instead of .html.</ul>
+            <ul>c.) The JSP engine loads the JSP page from disk and converts it into a servlet content. This conversion is very simple in which all template text is converted to println( ) statements and all JSP elements are converted to Java code that implements the corresponding dynamic behavior of the page.</ul>
+            <ul>d.) The JSP engine compiles the servlet into an executable class and forwards the original request to a servlet engine.</ul>
+            <ul>e.) A part of the web server called the servlet engine loads the Servlet class and executes it. During execution, the servlet produces an output in HTML format, which the servlet engine passes to the web server inside an HTTP response.</ul>
+            <ul>f.) The web server forwards the HTTP response to your browser in terms of static HTML content.</ul>
+            <ul>g.) Finally web browser handles the dynamically generated HTML page inside the HTTP response exactly as if it were a static page.</ul>
+        </li>
+        <li>The JSP engine checks to see whether a servlet for a JSP file already exists and whether the modification date on the JSP is older than the servlet.
+             If the JSP is older than its generated servlet, the JSP container assumes that the JSP hasn't changed and that the generated servlet still matches the JSP's contents.
+             JSP page is really just another way to write a servlet without having to be a Java programming wiz. 
+        </li>
+          <a href="sample2.html">return to main</a>
+    </ul>
+    <ul>How do you create custom tags?
+        <li>Custom tags are used defined tags
+            <ul>a.) To create a custom tag, you must 1st create a Java class that acts as a tag handler (public class HelloTag extends SimpleTagSupport {)</ul>
+            <ul>b.) Above code has simple coding where doTag() method takes the current JspContext object using getJspContext() method and uses it to send "Hello Custom Tag!" to the current JspWriter object.</ul>
+            <ul>c.) Compile above class and copy it in a directory available in environment variable CLASSPATH. Finally create following tag library file: <Tomcat-Installation-Directory>webapps\ROOT\WEB-INF\custom.tld.</ul>
+            <ul>d.)  use above defined custom tag Hello in our JSP program as follows:
+                 <li><%@ taglib prefix="ex" uri="WEB-INF/custom.tld"%></li>
+            </ul>
+        </li>
+        <li></li>
+          <a href="sample2.html">return to main</a>
+    </ul>
+    <ul>What is xsl and xslt?
+        <li>XSL
+            <ul>Stysleet for XML same as CSS</ul>
+        </li>
+        <li>XSLT
+            <ul>XSL Transformation - most important part of XSL</ul>
+            <ul>User to transform an XML document into another XL document, or another typr of document that is recognize by the browser, like html and Xhtml.</ul
+        </li>
+          <a href="sample2.html">return to main</a>
+    </ul> 
+</body>
+    

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpringFramework</title>
+    </head>
+<body>
+    <ul>1.) Explain to me IOC? Benefits of IOC?</b>
+           <li>Intro
+              <ul>In traditional programming, the flow of the business logic is determined by objects that are statically assigned to one another.</ul>
+              <ul>With inversion of control, the flow depends on the object graph that is instantiated by the assembler and is made possible by object interactions being defined through abstractions.</ul>
+              <ul>The binding process is achieved through dependency injection, although some argue that the use of a service locator also provides inversion of control.</ul>
+           </li>
+           <li>Design guidelines
+              <ul>1.) There is a decoupling of the execution of a certain task from implementation.</ul>
+              <ul>2.) Every module can focus on what it is designed for.</ul>
+              <ul>3.) Modules make no assumptions about what other systems do but rely on their contracts.</ul>
+              <ul>4.) Replacing modules has no side effect on other modules.</ul>
+           </li>
+           <li>Differentiating with dependency injection
+               <ul><b>IOC</b> Is a design paradigm with the goal of giving more control to the targeted components of your application, the ones getting the work done.</ul>
+               <ul><b>DI</b> Is a pattern used to create instances of objects that other objects rely on without knowing at compile time which class will be used to provide that functionality.</ul>
+               <ul>Inversion of control relies on dependency injection because a mechanism is needed in order to activate the components providing the specific functionality.
+The two concepts work together in this way to allow for much more flexible, reusable, and encapsulated code to be written. As such, they are important concepts in designing object-oriented solutions.</ul>
+           </li>
+           <li>Implementing IOC
+               <ul>1.)Using a factory pattern</ul>
+               <ul>2.)Using a service locator pattern</ul>
+               <ul>3.)Using a DI of any given below tyep:
+                   <li>a constructor injection</li>
+                   <li>a setter injection</li>
+                   <li>an interface injection </li>
+               </ul>
+           </li>
+           <li>Benefits of using IOC
+               <ul>Makes it easier to test your code.Without it , the code you are testing is hard to isolate as it will be highly coupled to the rest of the system</ul>
+               <ul>Useful when developing modular systems. You can replace components without requiring recompilation</ul> 
+           </li>
+           <li>Do you take IOC to production or is it only for Testing?
+                <ul>Certainly use it on production as well as for testing.</ul>
+           </li>
+           <li>Problems it try to solve
+               <ul>a.) Decoupling components and layers in the system</ul>
+               <ul>b.) Alleviates a component from being responsible for managing it's dependencies</ul>
+               <ul>c.) Swap dependency implementations in different environments.</ul>
+               <ul>d.) Allows a component be tested through mocking of dependencies.</ul>
+               <ul>e.) Provides a mechanism for sharing resources throughout an application.</ul>
+           </li>
+           <a href="sample2.html">return to main</a>
+    </ul>
+    <ul> What is SpringMVC?Explain to me the flow of SpringMVC?
+        <li>SpringMVC is designed aroung a DispatcherSevlet that dispathches requests to handlers, with configurable handler mappings, view resolution,locale and theme resolution as well as support for uploading files.</li>
+        <li>Spring clear separation of roles - controller, validator, command object, form object, model object, DispatcherServlet, handler mapping, view resolver, and so on - can be fulfilled by a specialized object.</li>
+        <li></li>
+        <a href="sample2.html">return to main</a>
+    </ul>
+    
+    
+</body>
+</html>    

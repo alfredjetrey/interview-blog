@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+    <head>
+        <title>Core Java</title>
+    </head>
+<body>
+           <ul><b>Answer :1.)What is serializable?</b>
+           <li>Serializable is a special interface that specifies that class is serialiazable.</li>
+           <li>It's special in that unlike a normal interface it does not define any methods that must be implemented: it is simply marking the class as serializable.</li>
+           <li>means it simply means converting an instance of a class (an object) into a format where it can be written to disk, or possibly transmitted over a network. </li>
+           <li>You could for example save your object to disk and reload it later, with all the field values and internal state saved.</li>
+           <li>Serializable is only a marker interface. It is completely empty.It simply allows the serialization mechanism to verify that the class is able to be persisted.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+      
+           <ul><b>Answer :2.)Difference between abstract class vs interface?</b>
+           <p>Abstract class is a class that cannot be instantiated, it can only be extended. </p>
+           <p>Interface is a contract meaning you are required to implement all the method inside the interface.</p>
+           <ul>Abstract class
+               <li>Can have both normal method and abstract method.</li>
+               <li>Can have only normal method, only abstract method, or no method at all.</li>
+               <li>Abstract method inside the Abstract class should be implemented.</li>
+           </ul>
+           
+           <ul>interface
+                <li>interface accepts only abstract method.</li>
+                <li>variable declared inside the interface is declared constant.</li>
+           </ul>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :3.)How static keyword is implemented?</b>
+           <li>static keyword is class type keyword you can access method and variable directly without creating and object.</li>
+           <li>You cannot create a static class</li>
+           <li>static method cannot be overriden</li>
+           <li>static variable cannot be change. you can change the value of the static variable if you put it static method.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :4.)How final keyword is implemented?</b>
+           <li>final keyword to a class the class cannot be extended and all the member of the class act as if declared final</li>
+           <li>finale method a method that cannot be overriden</li>
+           <li>final variables can only be initialized once, either via an initializer or an assignment statement.</li>
+           <li>A blank final instance variable of a class must be definitely assigned in every construtor of the class in which it is declared.</li>
+           <li>similarly, a blank final static variable must be definitely assigned in a static initializer of the class in which it is declared; otherwise, a compile-time error occurs in both cases.</li>
+           <li>Final inner class is defined within the body of a method, all variables declared final in the scope of that method are accessible from within the inner class. </li>
+           <li></li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+            
+           <ul><b>Answer :5.)What is polymorphism?</b>
+           <li> The ability to treat objects of different types in a similar manner.</li>
+           <li> polymorphism refers to a principle in biology in which an organism or species can have many different forms or stages.</li>
+           <li>Subclasses of a class can define their own unique behaviors and yet share some of the same functionality of the parent class.</li>
+           <li>Example: Car has a tire and engine , mazda multiple airbags , hyundai cool AC but hyundai,mazda has tire and engine.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+             
+           <ul><b>Answer :6.)Difference between method overriding and method overloading?Give me the clause on how it is implemented</b>
+           <li>Overriding means that a method inherited from a parent class will be changed,</li>
+           <li>But when overriding a method everything remains exactly the same except the method definition.</li>
+           <li>Basically what the method does is changed slighty to fit in with the needs of the child class.</li>
+           <li>The method name, the number and types of parameters, and the return type will all remain the same.</li>
+           <br>
+           <li>Overloading one must change either the type or the number of parameters for a method that belongs to the same class.</li>
+           <li>can't overload based on the type returned.(one method returns int, the other returns a float)</li>
+           <li>can't overload by changing just the name of the parameter.(from year to month)</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+              
+              
+           <ul><b>Answer :7.)Where are Instance variable and local variable stored?</b> 
+           <li>Instance variable are always stored in the heap, while local variable is stored in the Stack.</li> 
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :8.)What are the different type of Collections?</b>
+           <li>List,Set,Stack,Queue,Map</li> 
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :9.)Difference between List and Set?</b>
+           <li>List interface - storing of elements in order, accepts duplication(ArrayList,LinkedList).</li>
+           <li>Set interface - may or may not be order in storing elements. does not accept duplication(Arraylist,HashSet,TreeSet)</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+            
+           <ul><b>Answer :10.)What is a Map?</b>
+           <li>A collection interface that uses key value pair.use key to store and retrieve data.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+             
+           <ul><b>Answer :11.)What is the difference between linkedHashMap , Hastable, HashMap , TreeMap? and how it works.</b>
+           <li>LinkedHashMap - preserves the insertion order </li>
+           <li>Hastable - synchronized , in contrast to HashMap </li>
+           <li>HashMap - is implemented as a hash table, and there is no ordering on keys or values.</li>
+           <li>TreeMap - is implemented based on red-black tree structure , and it is ordered by key.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+              
+              
+           <ul><b>Answer :12.)Do you know multithreading?</b>
+           <li>multithreading is a process of executing multiple threads simultaneously.</li>
+           <li>It is a technique that allows a program or a process to execute many tasks concurrently(parallel)</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :13.)Difference between final,finalized,finally?</b>
+           <li>final - can be used along with variable, method and class.</li>
+           <li>finalized() - is called by Garbage collection thread just before collecting eligible objects.</li>
+           <li>finally - is used for exception handling along with try/catch.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+              
+              
+           <ul><b>Answer :14.)Explain how to implement try/catch exception?</b>
+           <li>try/catch exception is used for handle exception.Or if you don't what to throw it.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :15.)If I have one try and multiple catch exception, what exception is executed first?</b>
+           <li>If the are both same type of exception the 1st exception will be executed and the second one will never be executed.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :16.)What is a String? Difference between String, StringBuffer, and String Builder.</b>
+           <li>String is an array of immutable character.</li>
+           <li>String is immutable ,both StringBuffer(synchronized) mutable thread safe, String Builder(Unsynchronized) better performance not thread safe</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+            
+        
+           <ul><b>Answer :17.)How to create a Thread?</b>
+           <li> Thread thread = new Thread() </li>
+           <li> MyThread extends Thread - extending the Thread class.</li>
+           <li> MyRunnable implements Runnable - using runnable interface.</li>
+           <li> An application can use the Executor framework, in order to create a thread pool.</li>
+           <li>Note: The Runnable interface is preferred, as it does not require an object to inherit the Thread class. In case your application design requires multiple inheritance, only interfaces can help you. Also, the thread pool is very efficient and can be implemented and used very easily.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :18.)How to make Thread safe?</b>
+           <li>When synchronized is added to a static method, the Class object is the object which is locked.</li>
+           <li>We actually can make count++ atomic by using AtomicInteger from the package "java.util.concurrent.atomic".</li>
+           <li>Local variable are always thread safe.</li>
+           <li>Each thread has its own stack.Two different threads never shares the same stack.</li>
+           <li>All local variable defined in a method will be allocated memory in stack.</li>
+           <li>As soon as method execution is completed by the current thread, stack frame will be removed.</li>
+           <li>class MyCounter {
+	       private static int counter = 0;
+	           public static synchronized int getCount() {
+		   return counter++;
+                   }
+              }</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :19.)How to avoid Thread deadlock?</b>
+          <li>One of the best ways to prevent the potential for deadlock is to avoid acquiring more than one lock at a time,which is often practical.
+              However, if that is not possible, you need a strategy that ensures you acquire multiple locks in a consistent, defined order.
+              Depending on how your program uses locks, it might not be complicated to ensure that you use a consistent locking order.
+              In some programs, such as in Listing 1, all critical locks that might participate in multiple locking are drawn from a small set of
+              singleton lock objects. In that case, you can define a lock acquisition ordering on the set of locks and ensure that you always
+              acquire locks in that order. Once the lock order is defined, it simply needs to be well documented to encourage consistent use
+              throughout the program.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :20.)Benefits of MultiThreading?</b>
+           <li>Advantage :
+               <ul>general: better use of system resources</ul>
+               <ul>parallelize tasks</ul>
+               <ul>enhanced performance on multi-processor machines</ul>
+               <ul>multithreaded servers and interactive GUIs: better availability</ul>
+           </li>
+           <li>Disadvantages
+               <ul>general: increased complexity</ul>
+               <ul>synchronization of shared resources(objects,data)</ul>
+               <ul>difficult to debug, result is sometimes unpredictable</ul>
+               <ul>potential deadlocks</ul>
+               <ul>"starvation": some threads may not be serve with a bad design</ul>
+               <ul>constructing and synchronizing threads is CPU/Memory intensive</ul>
+           </li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+        
+           <ul><b>Answer :21.)What is an Iterator?</b>
+            <li>iterator is an interface belongs to collection framework allow us to traverse
+                the collection and access the data element of collection without bothering the
+                user about specific implementation of that collection it.
+            </li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :22.)Difference between Comparable and Comparator?</b>
+           <li>Comparator in java is defined in java.util package while Comparable interface is in java.lang package,</li>
+           <li>meaning Comparator should be used as utility to sort objects and Comparaple should be use by default</li>
+           <li> Comparator - public int compare(Object o1,Object o2)</li>
+           <li> Comparable - public int compareTo(Object o)</li>
+           <li> Comparator comparing two object while Comparable comparing to "this" reference with the object specied.</li>
+           <li> Objects w/c implement Comparable in Java can be used as keys in a SortedMap like TreeMap or elements in a SortedSet for example TreeSet, without specifying any comparator.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :23.)Difference between HashSet and TreeSet?</b>
+           <li>HashSet is Implemented using a hash table. Elements are not ordered. The add, remove, and contains methods have constant time complexity O(1).</li>
+           <li>TreeSet is implemented using a tree structure(red-black tree in algorithm book).
+               The elements in a set are sorted, but the add, remove, and contains methods has time complexity of O(log (n)).
+               It offers several methods to deal with the ordered set like first(), last(), headSet(), tailSet(), etc.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :24.)What is the purpose of garbage collection?</b>
+            <li>is used to clear the heap of object that the program is no longer using.
+            in other terms, garbage collection is the process of automatically freeing objects that are no longer referenced by the program.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :25.)What does System.gc() and Runtime.gc() methods do?</b>
+           <li>Both are same. System.gc() is effectively equivalent to Runtime.gc(). System.gc()internally calls Runtime.gc().</li>
+           <li>The only difference is System.gc() is a class method where as Runtime.gc() is an instance method. So, System.gc() is more convenient.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+        
+           <ul><b>Answer :26.)When is the finalize() called? What is the purpose of finalization?</b>
+           <li>When the garbage collector finds an object that is eligible for collection but has a finalizer
+              it does not deallocate it immediately. The garbage collector tries to complete as quickly as possible,
+              so it just adds the object to a list of objects with pending finalizers.The finalizer is called later on a separate thread.</li> 
+           <li>You can tell the system to try to run pending finalizers immediately by calling the method
+               System.runFinalization after a garbage collection.</li>
+           <li>But if you want to force the finalizer to run, you have to call it yourself.
+               The garbage collector does not guarantee that any objects will be collected or that the finalizers will be called.
+              It only makes a "best effort". However it is rare that you would ever need to force a finalizer to run in real code.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+        
+            
+           <ul><b>Answer :27.) Difference between class and object?</b>
+               <li>class is a reference of the object(blue print) and it does not exist, while object does exist both class and object have variables and methods.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+             
+            
+</body>
+    

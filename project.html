@@ -1,0 +1,142 @@
+<!DOCTYPE html>         
+        <head>
+            <title>Project</title>
+        </head> 
+        <body>
+
+            <ul><b>Answer :1.) Tell me about your last project?</b>
+           <li><b>Project Name             :</b>Retail Management System.</li>
+           <li><b>Project Use              :</b>To help lowes employee to enhance store management performance.</li>
+           <li><b>Project Functionality    :</b>Automate Inventory tracking ,Store Cash Management, Auto generate reports,call material order from any supplier anywhere in the world and supplier supply the order to a specific lowes store anywhere in the US.</li>
+           <li><b>Project Technical Aspect :</b>This was a typical J2EE job that encompassed most of J2EE technologies. Like JSP,Spring Core , SpringMVc, Hibernate,WebServices(Soap)</li>
+           <li><b>Role                     :</b>To analyze,design, and develop front component, create controllers , & make persistence classes.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :2.) What Design Process did you follow?</b>
+           <li>Agile design Process</li>      
+           <a href="sample2.html">return to main</a>
+           </ul>
+            
+           <ul><b>Answer :3.) How did you implement agile development?</b>
+           <li>Like any agile project , we created an initial work breakdown sturcture(WBS) with the architects and business analyst.</li>
+           <li>We developed a series of user stories for each iteration and meet frequently with the client.</li>
+           <li>At the end of each sprint we held a mini design review.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+            
+           <ul><b>Answer :4.) How did you handle bug in your project?Tell me about your experience about it.</b>
+           <li>I was informed of the bug through email issued by a testing team.</li>
+           <li>Next, would get the version of the code used by the testing department and install it to my machine using Subclipse.</li>
+           <li>I would then try to reproduce the bug locally.</li>
+           <li>After fixing the bug, I would generate a bug-fix report and inform my lead team.</li>
+           <li>My Experience : 1.) Null Pointers - compiler cannot check it , so usually if we are not implementing TDD, this will go to the testing team and work to the user.
+                <ul>Example 1: If you create a code that accept 3 input and you did not set any condition about how the user will input the data.What happens is if the user don't input anything it will give a null pointer exception.</ul>
+                <ul>Example 2: Confusion over pass by value or pass by reference.(This is a more challenging problem).</ul>
+                <ul>Example 3: Comparing two objects.</ul>
+                <ul>Example 4: Comparison assignment = to ==.</ul>
+                <ul>Example 5: Mistyping the name of the method when overriding.</ul>
+                <ul>Example 6: Accessing non-static member to a static method.</ul>
+                <ul>Example 7: Wrinting blank exception handler.</ul>
+                <ul>Example 8: Forgetting that java is zero index.</ul>
+                <ul>Example 9: Preventing concurrent access to shared variables by threads.</ul>
+                <ul>Example 10:Not following the naming convention.</ul>
+           </li>                           
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+            
+           <ul><b>Answer :5.) How many are you in a Team?</b>
+           <li>We are 5 in a team 1 team lead 3 developer and one tester.</li>      
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           
+           <ul><b>Answer :6.) Have you done any modeling on your project?</b>
+           <li>After requirements were set, we made UML use-case, class sequence, and activity diagrams before writing any code.</li>      
+           <a href="sample2.html">return to main</a>
+           </ul>
+            
+           <ul><b>Answer :7.) how do you handle logging? </b>
+           <li>I used log4J for logging.</li>      
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :8.) How did you handle report from you project? </b>
+           <li>On screen</li>
+           <li>Java generated hard copy</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :9.) What are the steps involved in project deployment? </b>
+           <li>We did a weekly project build. specific pom xml script a modified as necessary.</li>
+           <li>Maven is used because it is better in managing dependencies(Ant is ok use Ant+Ivy) and build artifacts.</li>
+           <li>The main benefit from maven is its lifecycle. You can just add specific actions on correct phase, which seems pretty logical:</li>
+           <li>Just lauch your integration tests on integration-test phase for example.</li>
+           <li>Also, there are many existing plugins, which could almost do everything.</li>
+           <li> src - compile -JAR,WAR,EAR - deployment</li>
+           <li>Windows(development)-Unix(pre-production)-Solaris(production)</li>  
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :10.) What is Maven? </b>
+           <li>Maven is a open source buid tool for enterprise Java project.</li>
+           <li>designed to take much of the hard work out of the build process.</li>
+           <li>Maven uses a declarative approach, where the project structure and contents are described, rather then the task-based approach used in Ant or in traditional make files, for example. </li>
+           <li>This helps enforce company-wide development standards and reduces the time needed to write and maintain build scripts.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :11.) What is POM.xml? </b>
+           <li>It is the fundamental unit of work in Maven.</li>
+           <li>It is an XML file that contains information about the project and configuration details used by Maven to build the project.</li>
+           <li>It contains default values for most project.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+            
+            <ul><b>Answer :12.) What is artifact id? </b>
+           <li>artifact is a file, usually a JAR, that gets deployed to a Maven repository.</li>
+           <li>artifact has a group ID(usually a reversed domain name, like com.example.foo) it is just a name.</li>
+           <li>project's dependencies are specified as artifacts.</li>
+           <li>Artifacts in maven are identified by a coordinate system of groupId, artifactId and version. </li>
+           <li>Used to identify dependencies(usually jar files)needed to build and run your code.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+            
+            <ul><b>Answer :13.) How do you handle performance issue on your project such as slow response times during sumbmission? </b>
+           <li>I first looked for any database queries that might be tied to the submission process.</li>
+           <li>If necessary, I would conduct a timing study and try to optimize the queries.</li>
+           <li>I then checked for nested loops creating new object instances.These could be replaced by stateless Singletons to save time and reduce latency.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+            
+           <ul><b>Answer :14.) How did you used JUnit in your project.</b>
+           <li>I used JUnit everytime I implement TDD approach. By making the test fail 1st and before passing making it pass.</li>
+           <li>The advantage of using this approach are documentations, you can test the code prior to sending it to the testing team, and also eliminate errors.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+            <ul><b>Answer :15.) What is TDD? </b>
+            <li>TDD is a testing approach by making your test fail 1st before making it pass.</li>
+            <li>It is a very popular approach to almost eliminate all the error before incorporating the new code to the application.</li>
+            <li>and also used for documentation.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :16.) Tell me how to use Mocking in your project?Example</b>
+           <li>Mocking is used to avoid messing up your production codes while testing new functionality in the application.</li>
+           <li>Example: If you testing a new functionality that involve and object in the production. instead using it you Mock the production object.</li>
+           <li>By doing that you can test your new method while keeping your production code safe.</li>
+           <li>Mocking is just creating a fake object to be use usually in testing.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+           <ul><b>Answer :17.)If you see a bad code in your project what would you do?Give a sample bad code implementation in your project.</b>
+           <li>Depending on have bad is the code.Example if the error is just naming convention, or you miss type the name of the method that you what to override.</li>
+           <li>I will basically change it to the appropriate name and put comments up top saying this is the before code, so the person or other developer can see what I change.</li>
+           <a href="sample2.html">return to main</a>
+           </ul>
+           
+        </body> 
+ </html>   
